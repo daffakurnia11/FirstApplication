@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,64 +9,81 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/aqua"
-        android:text="@string/text_length" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/editLength"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:textColor="@color/aqua"
-        android:lines="1" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_length"
+            android:textColor="@color/aqua" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/aqua"
-        android:text="@string/text_width" />
+        <EditText
+            android:id="@+id/editLength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:lines="1"
+            android:textColor="@color/aqua" />
 
-    <EditText
-        android:id="@+id/editWidth"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:textColor="@color/aqua"
-        android:lines="1" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_width"
+            android:textColor="@color/aqua" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/aqua"
-        android:text="@string/text_height" />
+        <EditText
+            android:id="@+id/editWidth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:lines="1"
+            android:textColor="@color/aqua" />
 
-    <EditText
-        android:id="@+id/editHeight"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:textColor="@color/aqua"
-        android:lines="1" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_height"
+            android:textColor="@color/aqua" />
+
+        <EditText
+            android:id="@+id/editHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:lines="1"
+            android:textColor="@color/aqua" />
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+            android:text="@string/btn_calculate"
+            android:textColor="@color/aqua" />
+
+        <TextView
+            android:id="@+id/textResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/text_result"
+            android:textColor="@color/aqua"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 
     <Button
-        android:id="@+id/btnCalculate"
+        android:id="@+id/btnIntentActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/red"
         android:textColor="@color/aqua"
-        android:text="@string/btn_calculate" />
+        android:layout_marginTop="30dp"
+        android:text="@string/btn_intent_activity"
+        android:layout_alignParentBottom="true" />
 
-    <TextView
-        android:id="@+id/textResult"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/text_result"
-        android:textSize="24sp"
-        android:textColor="@color/aqua"
-        android:textStyle="bold" />
-
-</LinearLayout>
+</RelativeLayout>

@@ -5,4 +5,7 @@
     <string name="text_height">Height</string>
     <string name="text_result">Result</string>
     <string name="btn_calculate">Calculate</string>
+    <string name="btn_intent_activity">Intent Activity</string>
+    <string name="text_intent_activity">This is the beginning of Intent Activity Materials</string>
+    <string name="text_main_application">Main Activity</string>
 </resources>

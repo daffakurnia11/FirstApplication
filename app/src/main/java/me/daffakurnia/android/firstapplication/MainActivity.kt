@@ -1,5 +1,6 @@
 package me.daffakurnia.android.firstapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -23,6 +24,9 @@ class MainActivity : AppCompatActivity() {
         var editHeight: EditText = findViewById(R.id.editHeight)
         var btnCalculate: Button = findViewById(R.id.btnCalculate)
         textResult = findViewById(R.id.textResult)
+
+        // Intent Activity Button
+        var btnIntentActivity: Button = findViewById(R.id.btnIntentActivity)
 
         btnCalculate.setOnClickListener {
             if (it.id == R.id.btnCalculate) {
@@ -55,6 +59,15 @@ class MainActivity : AppCompatActivity() {
         if (savedInstanceState != null) {
             val result  = savedInstanceState.getString(RESULT)
             textResult.text = result
+        }
+
+        // Intent Activity Button on Click
+        btnIntentActivity.setOnClickListener {
+            when (it.id) {
+                R.id.btnIntentActivity -> {
+                    startActivity(Intent(this@MainActivity, IntentActivity::class.java))
+                }
+            }
         }
     }
 

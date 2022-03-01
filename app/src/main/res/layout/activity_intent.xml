@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@color/navy"
+    tools:context=".IntentActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/aqua"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="@string/text_intent_activity" />
+
+    <Button
+        android:id="@+id/btnMainActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_main_application"
+        android:textColor="@color/aqua"
+        android:backgroundTint="@color/red"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>
