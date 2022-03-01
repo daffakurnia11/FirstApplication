@@ -13,4 +13,11 @@
     <string name="text_data_received">Data Received</string>
     <string name="text_object_received">Object Received</string>
     <string name="btn_dial_number">Dial a Phone Number</string>
+    <string name="text_choose_package">Please choose the package</string>
+    <string name="text_package_one">Personal Branding</string>
+    <string name="text_package_two">Business Package</string>
+    <string name="text_package_three">Enterprise Package</string>
+    <string name="text_package_four">EduSmart Package</string>
+    <string name="btn_move_result">Move with ResultActivity</string>
+    <string name="text_result_activity">Result from Activity</string>
 </resources>

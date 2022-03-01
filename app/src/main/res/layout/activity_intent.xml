@@ -48,6 +48,25 @@
             android:text="@string/btn_dial_number"
             android:textColor="@color/navy" />
 
+        <Button
+            android:layout_marginTop="16dp"
+            android:id="@+id/btnResultActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/tosca"
+            android:text="@string/btn_move_result"
+            android:textColor="@color/navy" />
+
+        <TextView
+            android:id="@+id/textResultActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="@string/text_result_activity"
+            android:textColor="@color/aqua"
+            android:textSize="20sp" />
+
     </LinearLayout>
 
     <Button

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navy"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".ResultActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@string/text_choose_package"
+            android:textColor="@color/aqua"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/packageGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/packageOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/text_package_one"
+                android:textColor="@color/aqua"/>
+
+            <RadioButton
+                android:id="@+id/packageTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/text_package_two"
+                android:textColor="@color/aqua"/>
+
+            <RadioButton
+                android:id="@+id/packageThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/text_package_three"
+                android:textColor="@color/aqua"/>
+
+            <RadioButton
+                android:id="@+id/packageFour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/text_package_four"
+                android:textColor="@color/aqua"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnChoosePackage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/tosca"
+            android:text="Choose the package!"
+            android:textColor="@color/navy" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnIntentActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:text="@string/btn_intent_activity"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

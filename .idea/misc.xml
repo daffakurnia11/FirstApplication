@@ -4,9 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Project/Android/FirstApplication/app/src/main/res/layout/activity_data.xml" value="0.33" />
-        <entry key="..\:/Project/Android/FirstApplication/app/src/main/res/layout/activity_intent.xml" value="0.14" />
+        <entry key="..\:/Project/Android/FirstApplication/app/src/main/res/layout/activity_intent.xml" value="0.1" />
         <entry key="..\:/Project/Android/FirstApplication/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Project/Android/FirstApplication/app/src/main/res/layout/activity_object.xml" value="0.1" />
+        <entry key="..\:/Project/Android/FirstApplication/app/src/main/res/layout/activity_result.xml" value="0.1" />
       </map>
     </option>
   </component>
