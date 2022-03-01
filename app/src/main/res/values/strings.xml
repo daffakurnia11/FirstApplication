@@ -20,4 +20,6 @@
     <string name="text_package_four">EduSmart Package</string>
     <string name="btn_move_result">Move with ResultActivity</string>
     <string name="text_result_activity">Result from Activity</string>
+    <string name="text_main_title">My Dicoding Android Exercise</string>
+    <string name="text_bar_volume">Bar Volume</string>
 </resources>
