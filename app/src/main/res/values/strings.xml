@@ -12,4 +12,5 @@
     <string name="btn_move_object">Move with Object</string>
     <string name="text_data_received">Data Received</string>
     <string name="text_object_received">Object Received</string>
+    <string name="btn_dial_number">Dial a Phone Number</string>
 </resources>

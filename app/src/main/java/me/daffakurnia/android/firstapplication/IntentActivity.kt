@@ -1,6 +1,7 @@
 package me.daffakurnia.android.firstapplication
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -13,6 +14,7 @@ class IntentActivity : AppCompatActivity() {
         val btnMainActivity: Button = findViewById(R.id.btnMainActivity)
         val btnMoveData: Button = findViewById(R.id.btnMoveData)
         val btnMoveObject: Button = findViewById(R.id.btnMoveObject)
+        val btnDialNumber: Button = findViewById(R.id.btnDialNumber)
 
         btnMainActivity.setOnClickListener {
             when (it.id) {
@@ -47,6 +49,16 @@ class IntentActivity : AppCompatActivity() {
                     val moveWithObject = Intent(this@IntentActivity, ObjectActivity::class.java)
                     moveWithObject.putExtra(ObjectActivity.PERSON_OBJECT, personData)
                     startActivity(moveWithObject)
+                }
+            }
+        }
+
+        // Dial Number using Implicit Intent
+        btnDialNumber.setOnClickListener {
+            when (it.id) {
+                R.id.btnDialNumber -> {
+                    val phoneNumber = "085163622012"
+                    startActivity(Intent(Intent.ACTION_DIAL, Uri.parse("tel:$phoneNumber")))
                 }
             }
         }
