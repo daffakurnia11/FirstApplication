@@ -12,7 +12,7 @@ class IntentActivity : AppCompatActivity() {
 
         val btnMainActivity: Button = findViewById(R.id.btnMainActivity)
         val btnMoveData: Button = findViewById(R.id.btnMoveData)
-
+        val btnMoveObject: Button = findViewById(R.id.btnMoveObject)
 
         btnMainActivity.setOnClickListener {
             when (it.id) {
@@ -22,6 +22,7 @@ class IntentActivity : AppCompatActivity() {
             }
         }
 
+        // Move Data using Explicit Intent
         btnMoveData.setOnClickListener {
             when (it.id) {
                 R.id.btnMoveData -> {
@@ -29,6 +30,23 @@ class IntentActivity : AppCompatActivity() {
                     moveWithData.putExtra(DataActivity.FULL_NAME, "Daffa Kurnia Fatah")
                     moveWithData.putExtra(DataActivity.AGE, 21)
                     startActivity(moveWithData)
+                }
+            }
+        }
+
+        // Move Data using Explicit Intent with Parcelable
+        btnMoveObject.setOnClickListener {
+            when (it.id) {
+                R.id.btnMoveObject -> {
+                    val personData = PersonData(
+                        "Daffa Kurnia Fatah",
+                        22,
+                        "daffakurniaf11@gmail.com",
+                        "Sidoarjo"
+                    )
+                    val moveWithObject = Intent(this@IntentActivity, ObjectActivity::class.java)
+                    moveWithObject.putExtra(ObjectActivity.PERSON_OBJECT, personData)
+                    startActivity(moveWithObject)
                 }
             }
         }
