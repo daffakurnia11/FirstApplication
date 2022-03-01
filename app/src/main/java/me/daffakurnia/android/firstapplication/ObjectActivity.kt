@@ -29,11 +29,7 @@ class ObjectActivity : AppCompatActivity() {
         textObjectReceived.text = textRendered
 
         btnIntentActivity.setOnClickListener {
-            when (it.id) {
-                R.id.btnIntentActivity -> {
-                    startActivity(Intent(this@ObjectActivity, IntentActivity::class.java))
-                }
-            }
+            startActivity(Intent(this@ObjectActivity, IntentActivity::class.java))
         }
     }
 }

@@ -27,11 +27,7 @@ class DataActivity : AppCompatActivity() {
         textDataReceived.text = textRendered
 
         btnIntentActivity.setOnClickListener {
-            when (it.id) {
-                R.id.btnIntentActivity -> {
-                    startActivity(Intent(this@DataActivity, IntentActivity::class.java))
-                }
-            }
+            startActivity(Intent(this@DataActivity, IntentActivity::class.java))
         }
     }
 }

@@ -36,60 +36,40 @@ class IntentActivity : AppCompatActivity() {
         val btnResultActivity: Button = findViewById(R.id.btnResultActivity)
 
         btnMainActivity.setOnClickListener {
-            when (it.id) {
-                R.id.btnMainActivity -> {
-                    startActivity(Intent(this@IntentActivity, MainActivity::class.java))
-                }
-            }
+            startActivity(Intent(this@IntentActivity, MainActivity::class.java))
         }
 
         // Move Data using Explicit Intent
         btnMoveData.setOnClickListener {
-            when (it.id) {
-                R.id.btnMoveData -> {
-                    val moveWithData = Intent(this@IntentActivity, DataActivity::class.java)
-                    moveWithData.putExtra(DataActivity.FULL_NAME, "Daffa Kurnia Fatah")
-                    moveWithData.putExtra(DataActivity.AGE, 21)
-                    startActivity(moveWithData)
-                }
-            }
+            val moveWithData = Intent(this@IntentActivity, DataActivity::class.java)
+            moveWithData.putExtra(DataActivity.FULL_NAME, "Daffa Kurnia Fatah")
+            moveWithData.putExtra(DataActivity.AGE, 21)
+            startActivity(moveWithData)
         }
 
         // Move Data using Explicit Intent with Parcelable
         btnMoveObject.setOnClickListener {
-            when (it.id) {
-                R.id.btnMoveObject -> {
-                    val personData = PersonData(
-                        "Daffa Kurnia Fatah",
-                        22,
-                        "daffakurniaf11@gmail.com",
-                        "Sidoarjo"
-                    )
-                    val moveWithObject = Intent(this@IntentActivity, ObjectActivity::class.java)
-                    moveWithObject.putExtra(ObjectActivity.PERSON_OBJECT, personData)
-                    startActivity(moveWithObject)
-                }
-            }
+            val personData = PersonData(
+                "Daffa Kurnia Fatah",
+                22,
+                "daffakurniaf11@gmail.com",
+                "Sidoarjo"
+            )
+            val moveWithObject = Intent(this@IntentActivity, ObjectActivity::class.java)
+            moveWithObject.putExtra(ObjectActivity.PERSON_OBJECT, personData)
+            startActivity(moveWithObject)
         }
 
         // Dial Number using Implicit Intent
         btnDialNumber.setOnClickListener {
-            when (it.id) {
-                R.id.btnDialNumber -> {
-                    val phoneNumber = "085163622012"
-                    startActivity(Intent(Intent.ACTION_DIAL, Uri.parse("tel:$phoneNumber")))
-                }
-            }
+            val phoneNumber = "085163622012"
+            startActivity(Intent(Intent.ACTION_DIAL, Uri.parse("tel:$phoneNumber")))
         }
 
         // Move Data with ResultActivity
         btnResultActivity.setOnClickListener {
-            when (it.id) {
-                R.id.btnResultActivity -> {
-                    val resultActivity = Intent(this@IntentActivity, ResultActivity::class.java)
-                    resultLauncher.launch(resultActivity)
-                }
-            }
+            val resultActivity = Intent(this@IntentActivity, ResultActivity::class.java)
+            resultLauncher.launch(resultActivity)
         }
     }
 }

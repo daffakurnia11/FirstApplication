@@ -24,26 +24,22 @@ class ResultActivity : AppCompatActivity() {
         packageGroup = findViewById(R.id.packageGroup)
 
         btnChoosePackage.setOnClickListener {
-            when (it.id) {
-                R.id.btnChoosePackage -> {
-                    if (packageGroup.checkedRadioButtonId > 0) {
-                        var packageName = ""
-                        when (packageGroup.checkedRadioButtonId) {
-                            R.id.packageOne -> packageName = "Personal Branding"
+            if (packageGroup.checkedRadioButtonId > 0) {
+                var packageName = ""
+                when (packageGroup.checkedRadioButtonId) {
+                    R.id.packageOne -> packageName = "Personal Branding"
 
-                            R.id.packageTwo -> packageName = "Business Package"
+                    R.id.packageTwo -> packageName = "Business Package"
 
-                            R.id.packageThree -> packageName = "Enterprise Package"
+                    R.id.packageThree -> packageName = "Enterprise Package"
 
-                            R.id.packageFour -> packageName = "EduSmart Package"
-                        }
-
-                        var resultIntent = Intent()
-                        resultIntent.putExtra(SELECTED_VALUE, packageName)
-                        setResult(RESULT_CODE, resultIntent)
-                        finish()
-                    }
+                    R.id.packageFour -> packageName = "EduSmart Package"
                 }
+
+                var resultIntent = Intent()
+                resultIntent.putExtra(SELECTED_VALUE, packageName)
+                setResult(RESULT_CODE, resultIntent)
+                finish()
             }
         }
     }
