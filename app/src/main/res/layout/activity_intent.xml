@@ -9,13 +9,28 @@
     android:background="@color/navy"
     tools:context=".IntentActivity">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:textColor="@color/aqua"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:text="@string/text_intent_activity" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@string/text_intent_activity"
+            android:textColor="@color/aqua"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnMoveData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/tosca"
+            android:text="@string/btnMoveData"
+            android:textColor="@color/navy" />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/btnMainActivity"

@@ -8,4 +8,5 @@
     <string name="btn_intent_activity">Intent Activity</string>
     <string name="text_intent_activity">This is the beginning of Intent Activity Materials</string>
     <string name="text_main_application">Main Activity</string>
+    <string name="btnMoveData">Move with Data</string>
 </resources>
