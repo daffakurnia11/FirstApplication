@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -45,6 +46,18 @@ class DetailCategoryFragment : Fragment() {
             val categoryDesc = arguments?.getString(DESCRIPTION)
             textCategoryName.text = categoryName
             textCategoryDesc.text = categoryDesc
+        }
+
+        btnShowDialog.setOnClickListener {
+            val mDialogCategoryFragment = DialogCategoryFragment()
+            val mFragmentManager = childFragmentManager
+            mDialogCategoryFragment.show(mFragmentManager, DialogCategoryFragment::class.java.simpleName)
+        }
+    }
+
+    internal var optionDialogListener: DialogCategoryFragment.OnOptionDialogListener = object : DialogCategoryFragment.OnOptionDialogListener {
+        override fun onOptionChosen(text: String?) {
+            Toast.makeText(requireActivity(), text, Toast.LENGTH_SHORT).show()
         }
     }
 

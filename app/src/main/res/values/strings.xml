@@ -34,4 +34,11 @@
     <string name="text_category_description">Category Description</string>
     <string name="btn_back_category">Back to List of Category</string>
     <string name="text_show_dialog">Show Dialog</string>
+    <string name="text_choose_category">Choose your wish!</string>
+    <string name="text_category_one">Front End Developer</string>
+    <string name="text_category_two">Back End Developer</string>
+    <string name="text_category_three">Software Developer</string>
+    <string name="text_category_four">Android Developer</string>
+    <string name="btn_close">Close</string>
+    <string name="btn_choose_category">Choose</string>
 </resources>
