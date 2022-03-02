@@ -29,5 +29,12 @@ class MainActivity : AppCompatActivity() {
         btnIntentActivity.setOnClickListener {
             startActivity(Intent(this@MainActivity, IntentActivity::class.java))
         }
+
+        // Fragment in Activity Button
+        val btnFlexibleFragment: Button = findViewById(R.id.btnFlexibleFragment)
+
+        btnFlexibleFragment.setOnClickListener {
+            startActivity(Intent(this@MainActivity, FragmentActivity::class.java))
+        }
     }
 }

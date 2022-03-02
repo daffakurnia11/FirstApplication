@@ -34,4 +34,13 @@
         android:textColor="@color/navy"
         android:text="@string/btn_intent_activity" />
 
+    <Button
+        android:id="@+id/btnFlexibleFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/tosca"
+        android:textColor="@color/navy"
+        android:text="@string/text_fragment_activity" />
+
 </LinearLayout>
