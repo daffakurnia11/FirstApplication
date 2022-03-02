@@ -1,4 +1,4 @@
-package me.daffakurnia.android.firstapplication
+package me.daffakurnia.android.firstapplication.fragment
 
 import android.content.Context
 import android.os.Bundle
@@ -11,6 +11,7 @@ import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.Toast
 import androidx.fragment.app.DialogFragment
+import me.daffakurnia.android.firstapplication.R
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

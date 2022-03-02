@@ -1,4 +1,4 @@
-package me.daffakurnia.android.firstapplication
+package me.daffakurnia.android.firstapplication.barvolume
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import me.daffakurnia.android.firstapplication.MainActivity
+import me.daffakurnia.android.firstapplication.R
 
 class BarVolumeActivity : AppCompatActivity() {
 
@@ -53,7 +55,7 @@ class BarVolumeActivity : AppCompatActivity() {
         }
 
         if (savedInstanceState != null) {
-            val result = savedInstanceState.getString(BarVolumeActivity.RESULT)
+            val result = savedInstanceState.getString(RESULT)
             textResult.text = result
         }
 

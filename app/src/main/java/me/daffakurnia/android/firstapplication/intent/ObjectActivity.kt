@@ -1,10 +1,11 @@
-package me.daffakurnia.android.firstapplication
+package me.daffakurnia.android.firstapplication.intent
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import me.daffakurnia.android.firstapplication.R
 
 class ObjectActivity : AppCompatActivity() {
 

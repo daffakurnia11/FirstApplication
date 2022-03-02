@@ -10,22 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstApplication">
         <activity
-            android:name=".FragmentActivity"
+            android:name=".fragment.FragmentActivity"
             android:exported="false" />
         <activity
-            android:name=".BarVolumeActivity"
+            android:name=".barvolume.BarVolumeActivity"
             android:exported="false" />
         <activity
-            android:name=".ResultActivity"
+            android:name=".intent.ResultActivity"
             android:exported="false" />
         <activity
-            android:name=".ObjectActivity"
+            android:name=".intent.ObjectActivity"
             android:exported="false" />
         <activity
-            android:name=".DataActivity"
+            android:name=".intent.DataActivity"
             android:exported="false" />
         <activity
-            android:name=".IntentActivity"
+            android:name=".intent.IntentActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

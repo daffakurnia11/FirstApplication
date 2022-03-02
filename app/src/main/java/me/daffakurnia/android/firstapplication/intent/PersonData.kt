@@ -1,4 +1,4 @@
-package me.daffakurnia.android.firstapplication
+package me.daffakurnia.android.firstapplication.intent
 
 import android.os.Parcel
 import android.os.Parcelable

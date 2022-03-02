@@ -1,8 +1,10 @@
-package me.daffakurnia.android.firstapplication
+package me.daffakurnia.android.firstapplication.fragment
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import me.daffakurnia.android.firstapplication.fragment.HomeFragment
+import me.daffakurnia.android.firstapplication.R
 
 class FragmentActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

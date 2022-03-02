@@ -1,4 +1,4 @@
-package me.daffakurnia.android.firstapplication
+package me.daffakurnia.android.firstapplication.fragment
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,6 +9,8 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import me.daffakurnia.android.firstapplication.R
+import me.daffakurnia.android.firstapplication.fragment.FragmentActivity
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

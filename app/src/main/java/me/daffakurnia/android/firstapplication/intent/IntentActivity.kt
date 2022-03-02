@@ -1,6 +1,5 @@
-package me.daffakurnia.android.firstapplication
+package me.daffakurnia.android.firstapplication.intent
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
@@ -9,6 +8,8 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
+import me.daffakurnia.android.firstapplication.MainActivity
+import me.daffakurnia.android.firstapplication.R
 
 class IntentActivity : AppCompatActivity() {
 

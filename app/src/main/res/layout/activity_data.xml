@@ -7,7 +7,7 @@
     android:padding="16dp"
     android:orientation="vertical"
     android:background="@color/navy"
-    tools:context=".DataActivity">
+    tools:context=".intent.DataActivity">
 
     <TextView
         android:id="@+id/textDataReceived"

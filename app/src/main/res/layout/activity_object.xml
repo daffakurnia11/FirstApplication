@@ -7,7 +7,7 @@
     android:background="@color/navy"
     android:padding="16dp"
     android:orientation="vertical"
-    tools:context=".ObjectActivity">
+    tools:context=".intent.ObjectActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
