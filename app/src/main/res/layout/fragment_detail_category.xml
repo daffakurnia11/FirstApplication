@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navy"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".DetailCategoryFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/textCategoryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/text_category_name"
+        android:textColor="@color/aqua"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textCategoryDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/text_category_description"
+        android:textColor="@color/aqua"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnBackCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:text="@string/btn_back_category" />
+
+    <Button
+        android:id="@+id/btnShowDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/tosca"
+        android:text="@string/text_show_dialog"
+        android:textColor="@color/navy" />
+
+
+</LinearLayout>

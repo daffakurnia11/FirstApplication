@@ -32,7 +32,23 @@ class CategoryFragment : Fragment() {
 
         val btnDetailCategory : Button = view.findViewById(R.id.btnDetailCategory)
         btnDetailCategory.setOnClickListener {
-            //
+            val mDetailCategoryFragment = DetailCategoryFragment()
+
+            val mBundle = Bundle()
+            mBundle.putString(DetailCategoryFragment.CATEGORY, "Android Category")
+            val description = "This category has a list for android developers with their salaries"
+            mBundle.putString(DetailCategoryFragment.DESCRIPTION, description)
+
+            mDetailCategoryFragment.arguments = mBundle
+
+            val mFragmentManager = parentFragmentManager
+            mFragmentManager
+                .beginTransaction()
+                .apply {
+                    replace(R.id.frameContainer, mDetailCategoryFragment, DetailCategoryFragment::class.java.simpleName)
+                    addToBackStack(null)
+                    commit()
+                }
         }
     }
 
