@@ -1,5 +1,6 @@
 package me.daffakurnia.android.firstapplication
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -38,8 +39,8 @@ class DetailCategoryFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val textCategoryName: TextView = view.findViewById(R.id.textCategoryName)
         val textCategoryDesc: TextView = view.findViewById(R.id.textCategoryDesc)
-        var btnBackCategory: Button = view.findViewById(R.id.btnBackCategory)
-        var btnShowDialog: Button = view.findViewById(R.id.btnShowDialog)
+        val btnBackCategory: Button = view.findViewById(R.id.btnBackCategory)
+        val btnShowDialog: Button = view.findViewById(R.id.btnShowDialog)
 
         if (arguments != null) {
             val categoryName = arguments?.getString(CATEGORY)
@@ -52,6 +53,10 @@ class DetailCategoryFragment : Fragment() {
             val mDialogCategoryFragment = DialogCategoryFragment()
             val mFragmentManager = childFragmentManager
             mDialogCategoryFragment.show(mFragmentManager, DialogCategoryFragment::class.java.simpleName)
+        }
+
+        btnBackCategory.setOnClickListener {
+            startActivity(Intent(requireActivity(), FragmentActivity::class.java))
         }
     }
 
