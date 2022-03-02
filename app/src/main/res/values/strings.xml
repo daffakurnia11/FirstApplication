@@ -41,4 +41,6 @@
     <string name="text_category_four">Android Developer</string>
     <string name="btn_close">Close</string>
     <string name="btn_choose_category">Choose</string>
+    <string name="btn_layout_materials">Layout Materials</string>
+    <string name="btn_back_main">Back to Main Activity</string>
 </resources>
