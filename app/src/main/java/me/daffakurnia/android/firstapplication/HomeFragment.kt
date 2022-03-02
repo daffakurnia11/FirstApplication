@@ -46,7 +46,18 @@ class HomeFragment : Fragment() {
 
         val btnFragmentCategory: Button = view.findViewById(R.id.btnFragmentCategory)
         btnFragmentCategory.setOnClickListener {
-            //
+            val mCategoryFragment = CategoryFragment()
+            val mFragmentManager = parentFragmentManager
+            mFragmentManager
+                .beginTransaction()
+                .apply {
+                    // Replacing the existing fragment on layout container
+                    replace(R.id.frameContainer, mCategoryFragment, CategoryFragment::class.java.simpleName)
+
+                    // For returning back into previous fragment
+                    addToBackStack(null)
+                    commit()
+                }
         }
     }
 

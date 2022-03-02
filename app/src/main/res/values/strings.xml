@@ -26,4 +26,6 @@
     <!-- Fragment String -->
     <string name="text_home_fragment">Hello home fragment</string>
     <string name="btn_fragment_categories">To the fragment categories</string>
+    <string name="text_category_fragment">This is Fragment Category</string>
+    <string name="btn_category_list">List of Category</string>
 </resources>
