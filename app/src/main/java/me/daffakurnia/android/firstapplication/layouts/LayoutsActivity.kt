@@ -12,6 +12,8 @@ class LayoutsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_layouts)
 
+        supportActionBar?.title = "Layout Materials"
+
         val btnBackMain: Button = findViewById(R.id.btnBackMain)
         btnBackMain.setOnClickListener {
             startActivity(Intent(this@LayoutsActivity, MainActivity::class.java))
