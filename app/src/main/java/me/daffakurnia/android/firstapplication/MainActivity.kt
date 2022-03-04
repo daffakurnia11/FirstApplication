@@ -7,6 +7,7 @@ import android.widget.Button
 import me.daffakurnia.android.firstapplication.barvolume.BarVolumeActivity
 import me.daffakurnia.android.firstapplication.fragment.FragmentActivity
 import me.daffakurnia.android.firstapplication.intent.IntentActivity
+import me.daffakurnia.android.firstapplication.layouts.ConstraintLayoutActivity
 import me.daffakurnia.android.firstapplication.layouts.LayoutsActivity
 
 class MainActivity : AppCompatActivity() {
@@ -35,10 +36,16 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this@MainActivity, FragmentActivity::class.java))
         }
 
-        // Layout Materials Button
-        val btnLayoutMaterials: Button = findViewById(R.id.btnLayoutMaterials)
-        btnLayoutMaterials.setOnClickListener {
+        // Linear Layouts Button
+        val btnLinearLayouts: Button = findViewById(R.id.btnLinearLayouts)
+        btnLinearLayouts.setOnClickListener {
             startActivity(Intent(this@MainActivity, LayoutsActivity::class.java))
+        }
+
+        // Constraint Layouts Button
+        val btnConstraintLayouts: Button = findViewById(R.id.btnConstraintLayouts)
+        btnConstraintLayouts.setOnClickListener {
+            startActivity(Intent(this@MainActivity, ConstraintLayoutActivity::class.java))
         }
     }
 }
