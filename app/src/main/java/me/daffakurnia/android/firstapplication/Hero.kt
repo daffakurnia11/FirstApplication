@@ -10,6 +10,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 
 data class Hero(
     var name: String?,
@@ -65,6 +66,10 @@ class ListHeroAdapter(private val listHero: ArrayList<Hero>) : RecyclerView.Adap
         holder.itemView.setOnClickListener {
             Toast.makeText(holder.itemView.context, "You choose " + listHero[holder.adapterPosition].name, Toast.LENGTH_SHORT).show()
         }
+        Glide.with(holder.itemView.context)
+            .load(photo) // URL Gambar
+            .circleCrop() // Mengubah image menjadi lingkaran
+            .into(holder.imgItemPhoto) // imageView mana yang akan diterapkan
     }
 
     override fun getItemCount(): Int = listHero.size
