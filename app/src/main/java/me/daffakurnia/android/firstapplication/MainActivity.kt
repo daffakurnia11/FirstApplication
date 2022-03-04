@@ -17,8 +17,10 @@ import me.daffakurnia.android.firstapplication.layouts.LayoutsActivity
 
 class MainActivity : AppCompatActivity() {
 
+    /*
     private lateinit var myButton: MyButton
     private lateinit var myEditText: MyEditText
+     */
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,6 +56,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this@MainActivity, ConstraintLayoutActivity::class.java))
         }
 
+        // Recycler View Button
+        val btnRecyclerView: Button = findViewById(R.id.btnRecyclerView)
+        btnRecyclerView.setOnClickListener {
+            startActivity(Intent(this@MainActivity, RecyclerActivity::class.java))
+        }
+
+        /*
         myButton = findViewById(R.id.my_button)
         myEditText = findViewById(R.id.my_edit_text)
         setMyButtonEnable()
@@ -67,10 +76,13 @@ class MainActivity : AppCompatActivity() {
             }
         })
         myButton.setOnClickListener { Toast.makeText(this@MainActivity, myEditText.text, Toast.LENGTH_SHORT).show() }
+         */
     }
 
+    /*
     private fun setMyButtonEnable() {
         val result = myEditText.text
         myButton.isEnabled = result != null && result.toString().isNotEmpty()
     }
+     */
 }

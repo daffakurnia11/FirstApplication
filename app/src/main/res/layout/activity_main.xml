@@ -61,6 +61,16 @@
         android:textColor="@color/navy"
         android:text="@string/btn_constraint_layouts" />
 
+    <Button
+        android:id="@+id/btnRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/tosca"
+        android:textColor="@color/navy"
+        android:text="@string/btn_recycle_view" />
+
+<!--
     <me.daffakurnia.android.firstapplication.customview.MyEditText
         android:id="@+id/my_edit_text"
         android:layout_width="match_parent"
@@ -74,5 +84,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:enabled="true" />
+-->
 
 </LinearLayout>

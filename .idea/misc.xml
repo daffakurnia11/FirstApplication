@@ -12,13 +12,15 @@
         <entry key="..\:/Project/Android/FirstApplication/app/src/main/res/layout/activity_fragment.xml" value="0.1" />
         <entry key="..\:/Project/Android/FirstApplication/app/src/main/res/layout/activity_intent.xml" value="0.1" />
         <entry key="..\:/Project/Android/FirstApplication/app/src/main/res/layout/activity_layouts.xml" value="0.33" />
-        <entry key="..\:/Project/Android/FirstApplication/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Project/Android/FirstApplication/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Project/Android/FirstApplication/app/src/main/res/layout/activity_object.xml" value="0.1" />
+        <entry key="..\:/Project/Android/FirstApplication/app/src/main/res/layout/activity_recycler.xml" value="0.33" />
         <entry key="..\:/Project/Android/FirstApplication/app/src/main/res/layout/activity_result.xml" value="0.1" />
         <entry key="..\:/Project/Android/FirstApplication/app/src/main/res/layout/fragment_category.xml" value="0.18" />
         <entry key="..\:/Project/Android/FirstApplication/app/src/main/res/layout/fragment_detail_category.xml" value="0.1" />
         <entry key="..\:/Project/Android/FirstApplication/app/src/main/res/layout/fragment_dialog_category.xml" value="0.1" />
         <entry key="..\:/Project/Android/FirstApplication/app/src/main/res/layout/fragment_home.xml" value="0.18" />
+        <entry key="..\:/Project/Android/FirstApplication/app/src/main/res/layout/item_row_hero.xml" value="0.33" />
         <entry key="..\:/Project/Android/FirstApplication/app/src/main/res/layout/layout_seller.xml" value="0.25" />
         <entry key="..\:/Project/Android/FirstApplication/app/src/main/res/layout/layout_spesification.xml" value="0.33" />
       </map>
