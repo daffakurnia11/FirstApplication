@@ -61,4 +61,18 @@
         android:textColor="@color/navy"
         android:text="@string/btn_constraint_layouts" />
 
+    <me.daffakurnia.android.firstapplication.customview.MyEditText
+        android:id="@+id/my_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/aqua"
+        android:layout_marginTop="16dp" />
+
+    <me.daffakurnia.android.firstapplication.customview.MyButton
+        android:id="@+id/my_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:enabled="true" />
+
 </LinearLayout>
